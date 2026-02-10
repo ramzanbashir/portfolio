@@ -1,0 +1,102 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.navbar-brand, .nav-link {
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border: 5px #a085bd solid;
+  border-image: linear-gradient(100px, #6a11cb, #2575fc) 1;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.highlight {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typing-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #666;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #007bff;
+  animation: typing 6s steps(30, end) infinite, blink 0.7s step-end infinite;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 32%; }
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #75e4ec; }
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.progress-bar {
+  transition: width 1s ease-in-out;
+  color: #fff;
+}
+
+.gradient-html { background: linear-gradient(to right, #ff512f, #dd2476); }
+.gradient-css { background: linear-gradient(to right, #1fa2ff, #12d8fa); }
+.gradient-js { background: linear-gradient(to right, #f7971e, #ffd200); }
+.gradient-bootstrap { background: linear-gradient(to right, #6f42c1, #563d7c); }
+.gradient-tailwind { background: linear-gradient(to right, #38b2ac, #319795); }
+.gradient-git { background: linear-gradient(to right, #f85032, #e73827); }
+
+.theme-toggle i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer,
+.dark-mode .section {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: #eee !important;
+}
+
+footer i {
+  font-size: 20px;
+  color: #555;
+  transition: color 0.3s;
+}
+
+footer i:hover {
+  color: #007bff;
+}
